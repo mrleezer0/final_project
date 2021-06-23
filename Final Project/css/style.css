@@ -2,16 +2,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #999;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-
+.logo {
+    max-width: 200px;
+    padding: 1rem;
+}
+.backgroundpic {
+    max-width: 800px;
+    justify-self; top: ;
+}
 header {
     height: 15%;
     max-height: 200px;
-    background-color: #002984;
+    background-color: #000000;
 }
 
 main {
@@ -25,22 +32,13 @@ main {
 .column {
     width: 95%;
     height: 100%;
+    color: white;
 }
 
-#column-1 {
-    background-color: #757de8;
-}
 
-#column-2 {
-    background-color: #3f51b5;
-}
-
-#column-3 {
-    background-color: #757de8;
-}
 
 footer {
-    background-color: #002984;
+    background-color: #000000;
 }
 
 @media screen and (min-width: 800px) {
