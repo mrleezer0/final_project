@@ -20,6 +20,13 @@ header {
     max-height: 200px;
     background-color: #000000;
 }
+h2 { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
+/* This text is in Copperplate */
+.class { 
+	font-family: Copperplate,Copperplate Gothic Light,fantasy; 
+}
+
+
 
 main {
     display: flex;
@@ -52,6 +59,14 @@ footer {
         max-width: 800px;
         padding: 1rem;
     }
+    .block {
+        position: relative;
+        padding-left: 1em;
+    }
+    .backgroundpic {
+        position: relative;
+        
+    }
     
 }
 @media (min-width: 1025px) {
@@ -60,5 +75,13 @@ footer {
       flex-direction: row;
     justify-content: space-between;}
     
+    }
+    .block {
+        position: relative;
+        padding-left: 1em;
+    }
+    .backgroundpic {
+        position: relative;
+        padding-block: 1em;
     }
     
