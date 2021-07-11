@@ -7,10 +7,10 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-.logo {
-    max-width: 200px;
-    padding: 1rem;
+.nav-menu {
+    font-family: Embossing Tape BRK Regular;
 }
+
 .backgroundpic {
     max-width: 800px;
     justify-self; top: ;
@@ -48,6 +48,11 @@ footer {
     .column {
         width: 28%;
     }
+    .logo {
+        max-width: 800px;
+        padding: 1rem;
+    }
+    
 }
 @media (min-width: 1025px) {
     #nav-menu {
@@ -56,3 +61,4 @@ footer {
     justify-content: space-between;}
     
     }
+    
