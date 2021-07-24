@@ -1,29 +1,68 @@
+
 body {
+    background-color: #493025;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-.nav-menu {
-    font-family: Embossing Tape BRK Regular;
+nav-menu { 
+    font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
 }
+.logo {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.block {
+    width: 90%;
+    position: relative;
+    padding-left: 1em;
+}
+.backgroundpic {
+    width: 100%;
+    position: relative;
+}
+.jimmy {
+    width: 100%;
+    position: relative;
+    padding-block: 1em;
+}
+
+
 
 .backgroundpic {
     max-width: 800px;
-    justify-self; top: ;
+    justify-self: top: ;
 }
 header {
     height: 15%;
     max-height: 200px;
-    background-color: #000000;
+    background-color: #493025;
 }
-h2 { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
-/* This text is in Copperplate */
-.class { 
-	font-family: Copperplate,Copperplate Gothic Light,fantasy; 
+h1 {
+    color: bisque;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+h2 {
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700; line-height: 26.4px;
 }
 
 
@@ -45,7 +84,7 @@ main {
 
 
 footer {
-    background-color: #000000;
+    background-color: #493025;
 }
 
 @media screen and (min-width: 800px) {
@@ -55,33 +94,24 @@ footer {
     .column {
         width: 28%;
     }
-    .logo {
-        max-width: 800px;
-        padding: 1rem;
+    li {
+        align-items: flex-end;
+        color: bisque;
     }
-    .block {
-        position: relative;
-        padding-left: 1em;
-    }
-    .backgroundpic {
-        position: relative;
-        
-    }
+    
+    
     
 }
 @media (min-width: 1025px) {
     #nav-menu {
       display: flex;
       flex-direction: row;
-    justify-content: space-between;}
+      justify-content: space-between;}
     
     }
-    .block {
-        position: relative;
-        padding-left: 1em;
-    }
-    .backgroundpic {
-        position: relative;
-        padding-block: 1em;
-    }
-    
+    .burger {
+        width: 35px;
+        height: 5px;
+        background-color: bisque;
+        margin: 6px 0;
+      }
