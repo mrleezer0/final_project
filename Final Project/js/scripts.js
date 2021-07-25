@@ -1,33 +1,40 @@
-//find element on web page
-const actionButton = document.getElementById("action-btn");
-
-//perform action on click event
-actionButton.addEventListener("click", performActionOnClick)
-
-const listItems = document.getElementById('list-items'); //entry point for list items
-const dataCollection = [];
-
-//function definition
-function performActionOnClick() {
-    const value = `test ${new Date()}`;
-
-    dataCollection.push(value);
-
-    addItemAndRenderList(dataCollection);
-}
-
-function addItemAndRenderList(dataCollection) {
-    //cleaning unordered list
-    while (listItems.firstChild) {
-        listItems.removeChild(listItems.firstChild);
+var Menu = {
+    el: {
+      menu: $('.menu'),
+      menuTop: $('.menu-top'),
+      menuClose: $('.menu-close'),
+      menuMiddle: $('.menu-middle'),
+      menuBottom: $('.menu-bottom'),
+      menuText: $('.menu-text')
+    },
+    
+    init: function() {
+      Menu.bindUIactions();
+    },
+    
+    bindUIactions: function() {
+      Menu.el.menu
+          .on(
+            'click',
+          function(event) {
+          Menu.activateMenu(event);
+          event.preventDefault();
+        }
+      );
+    },
+    
+    activateMenu: function() {
+      Menu.el.menuTop.toggleClass('menu-top-expand expand');
+      Menu.el.menuMiddle.toggleClass('menu-middle-expand expand');
+      Menu.el.menuBottom.toggleClass('menu-bottom-expand expand'); 
+      Menu.el.menuText.toggleClass('menu-text-expand');
+      Menu.el.menuClose.toggleClass('menu-close-visible');
     }
-
-    //add new item with value to existing unordered list 
-    for (let i = 0; i < dataCollection.length; i++) {
-        const listItem = document.createElement("LI");
-        const textValueForListItem = document.createTextNode(dataCollection[i]);
-
-        listItem.appendChild(textValueForListItem);
-        listItems.appendChild(listItem);
-    }
-}
+  };
+    
+    //Stop menu item click closing the menu
+    $(".menu .menu-global").click(function(e) {
+        e.stopPropagation();
+  });
+  
+  Menu.init();
