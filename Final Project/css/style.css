@@ -1,5 +1,14 @@
 
-
+.logo {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+}
+.jimmy {
+    width: 100%;
+    position: relative;
+    padding-block: 1em;
+}
     h1 {
     color: bisque;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
@@ -8,6 +17,7 @@
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
+    text-align: center;
 }
 h2 {
     color: bisque;
@@ -16,6 +26,17 @@ h2 {
     font-style: normal;
     font-variant: normal;
     font-weight: 700; line-height: 26.4px;
+    text-align: center;
+}
+h3, h4 {
+    color: bisque;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700; line-height: 15px;
+    text-align:left;
+    padding: .5rem;
 }
 .main-head {
     grid-area: header;
@@ -29,13 +50,18 @@ h2 {
     grid-area: content;
   }
   .main-nav {
+    color: bisque;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align:inherit;
     grid-area: nav;
   }
   .side {
     grid-area: sidebar;
-  }
-  .ad {
-    grid-area: ad;
   }
   .main-footer {
     grid-area: footer;
@@ -53,44 +79,61 @@ h2 {
   @media (max-width: 700px) {
     .column {
         flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding: .5rem;
     }
     .wrapper {
        background-color: rgba(17, 15, 13, .80);
-      grid-template-columns: 1fr 3fr;
-      grid-template-areas:
-        "header  header"
-        "nav     nav"
-        "sidebar content"
-        "ad      footer";
+    }
+    .block
+    {
+        width: 90%;
+        position: relative;
+        padding: .5em;
+    }
+    .jimmy
+    {
+        width: 90%;
+        position: relative;
+        padding: .5em;
     }
     .logo {
         width: 100%;
-        max-width: 500px;
-        padding: 1rem;
+        max-width: 350px;
+        padding: .75rem;
     }
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-    }
+    ul {
+    color: bisque;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align:inherit;
+    flex-direction: column;
+    justify-content:inherit;
+}
   }
   @media (min-width: 701px) {
     .column {
-        float: left;
+        float:inline-start;
         width: 25%;
-        padding: 20px;
-    }
+        padding: 50px;
+        text-align: center;}
     .wrapper {
-        display: flex;
+        display:flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: rgba(17, 15, 13, .80);
-      grid-auto-flow: column;
+        grid-auto-flow: column;
       grid-template-rows: 1fr 4fr 1fr;
       grid-template-areas:
         "header header  header"
         "nav    content sidebar"
         "nav    content ad"
-        "footer footer  footer"
+        "footer footer  footer";
      }
      nav ul {
         display: flex;
