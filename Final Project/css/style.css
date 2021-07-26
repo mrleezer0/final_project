@@ -1,8 +1,7 @@
-
-.logo {
+.instagramicon {
+    color: bisque;
     width: 100%;
-    max-width: 500px;
-    padding: 1rem;
+    max-width: 25px;
 }
 .jimmy {
     width: 100%;
@@ -28,27 +27,22 @@ h2 {
     font-weight: 700; line-height: 26.4px;
     text-align: center;
 }
-h3, h4 {
+h3 {
     color: bisque;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
     font-size: 12px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 700; line-height: 15px;
+    font-weight: 200;
+    line-height: 2.5rem;
     text-align:left;
     padding: .5rem;
 }
-.main-head {
-    grid-area: header;
-  }
   .logo {
     width: 100%;
     max-width: 500px;
     padding: 1rem;
 }
-  .content {
-    grid-area: content;
-  }
   .main-nav {
     color: bisque;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
@@ -59,22 +53,6 @@ h3, h4 {
     line-height: 26.4px;
     text-align:inherit;
     grid-area: nav;
-  }
-  .side {
-    grid-area: sidebar;
-  }
-  .main-footer {
-    grid-area: footer;
-  }
-  .wrapper {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-      "header"
-      "nav"
-      "content"
-      "sidebar"
-      "footer";
   }
   @media (max-width: 700px) {
     .column {
@@ -102,6 +80,23 @@ h3, h4 {
         width: 100%;
         max-width: 350px;
         padding: .75rem;
+    }
+    .instagramicon {
+        color: bisque;
+        width: 100%;
+        max-width: 25px;
+    }
+    .youtubeicon {
+        color: bisque;
+        width: 100%;
+        max-width: 25px;
+    }
+    footer {
+                bottom: 0;
+        background-color: #493025;
+        width: 100%;
+        max-height: 2.5rem;
+        max-width:inherit;
     }
     ul {
     color: bisque;
@@ -145,7 +140,3 @@ h3, h4 {
         max-width: 500px;
         padding: 1rem;
     }
-  }
-  
-  
-  
