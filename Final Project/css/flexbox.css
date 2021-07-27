@@ -1,0 +1,54 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.row,
+  .col {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex: 1;
+  flex-direction: column;
+	}
+	@media (min-width: 825px) {
+
+		.main-header,
+		.main-nav,
+		.row,
+	  .col {
+			display: flex;
+		}
+	
+		.main-header {
+			flex-direction: crow;
+			align-items: center;
+		}
+	
+		.col {
+			flex: 1;
+	  flex-direction: column;
+		}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.logo {
+		width: 100%;
+		max-width: 500px;
+		padding: 1rem;
+	}
+
+}

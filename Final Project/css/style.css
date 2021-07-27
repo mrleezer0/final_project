@@ -1,23 +1,29 @@
-.instagramicon {
-    width: 100%;
-    max-width: 25px;
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
 }
-.jimmy {
-    width: 100%;
-    position: relative;
-    padding-block: 1em;
+body {
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.6;
+	color: bisque;
+	margin: 0;
+	text-align: center;
 }
-    h1 {
-    color: bisque;
-    font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    text-align: center;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-h2 {
+p {
+	font-size: .95em;
+	margin: 0 0 1em 0;
+}
+h2,
+h3,
+a {
     color: bisque;
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
@@ -26,177 +32,92 @@ h2 {
     font-weight: 300; line-height: 26.4px;
     text-align: center;
 }
+h2,
 h3 {
-    color: bisque;
-    font-family: 'Roboto Slab', serif;
-    font-size: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 100;
-    line-height: 2.5rem;
-    text-align:left;
-    padding: .5rem;
+	margin: 0 0 .8em 0;
 }
-  .logo {
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #493025;
+	background-color: bisque;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: burlywood;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color: bisque;
+	background: #493025;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+}
+.col {
+	padding: 1em;
+	background: #493025a9;
+	border-radius: 1em;
+	margin: 0 .5em .8em;
+}
+.main-footer {
+	background: #493025;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+.instagramicon {
+	width: 100%;
+	max-width: 25px;
+}
+.youtubeicon {
+	width: 100%;
+	max-width: 25px;
+
+/* ---- Page Elements ---- */
+
+.logo {
     width: 100%;
     max-width: 500px;
     padding: 1rem;
 }
-  .main-nav {
-    color: bisque;
-    font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 26.4px;
-    text-align:inherit;
-    grid-area: nav;
-  }
-  @media (max-width: 700px) {
-    .column {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        padding: .5rem;
-    }
-    .wrapper {
-       background-color: rgba(17, 15, 13, .80);
-    }
-    .block
-    {
-        width: 90%;
-        position: relative;
-        padding: .5em;
-    }
-    .jimmy
-    {
-        width: 90%;
-        position: relative;
-        padding: .5em;
-    }
-    .logo {
-        width: 100%;
-        max-width: 350px;
-        padding: .75rem;
-    }
-    .instagramicon {
-        width: 100%;
-        max-width: 25px;
-    }
-    .youtubeicon {
-        width: 100%;
-        max-width: 25px;
-    }
-    footer {
-        bottom: 0;
-        background-color: #493025;
-        width: 100%;
-        max-height: 2.5rem;
-        max-width:inherit;
-        ul {list-style-type: none;
-            font-size: 16pt;
-            }
-            .mail {
-            margin: auto;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            width: 400px;
-            }
-            .mail h2 {
-            margin-left: 38px;
-            }
-            input {
-            font-size: 20pt;
-            }
-            input submit {
-                font-size: 12pt;
-                }
-                .rq {
-                color: #FF0000;
-                font-size: 10pt;
-                }
-    }
-    ul {
-    color: bisque;
-    font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    text-align:inherit;
-    justify-content:inherit;
+.headline {
+	margin-bottom: 0;
 }
-  }
-  @media (min-width: 701px) {
-    .column {
-        float:inline-start;
-        width: 25%;
-        padding: 50px;
-        text-align: center;}
-    .wrapper {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: rgba(17, 15, 13, .80);
-        grid-auto-flow: column;
-      grid-template-rows: 1fr 4fr 1fr;
-      grid-template-areas:
-        "header header  header"
-        "nav    content sidebar"
-        "nav    content ad"
-        "footer footer  footer";
-     }
-     nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;  
-       }
-     .logo {
-        width: 100%;
-        max-width: 500px;
-        padding: 1rem;
-    }
-    .instagramicon {
-        color: bisque;
-        width: 100%;
-        max-width: 25px;
-    }
-    .youtubeicon {
-        color: bisque;
-        width: 100%;
-        max-width: 25px;
-    }
-    footer {
-        bottom: -25;
-        background-color: #493025;
-        width: 100%;
-        max-height: 2.5rem;
-        max-width:inherit;
-    }
-    ul {list-style-type: none;
-        font-size: 16pt;
-        }
-        .mail {
-        margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 400px;
-        border: 1px soild silver;
-        }
-        .mail h2 {
-        margin-left: 38px;
-        }
-        input {
-        font-size: 20pt;
-        }
-        input:focus, textarea:focus{
-        background-color: lightyellow;
-        }
-        input submit {
-            font-size: 12pt;
-            }
-            .rq {
-            color: #FF0000;
-            font-size: 10pt;
-            }
+.feat-img {
+	border-radius: 5px;
+}
