@@ -30,7 +30,7 @@ h2 {
 h3 {
     color: bisque;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
     font-variant: normal;
     font-weight: 200;
@@ -97,17 +97,42 @@ h3 {
         width: 100%;
         max-height: 2.5rem;
         max-width:inherit;
+        ul {list-style-type: none;
+            font-size: 16pt;
+            }
+            .mail {
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 400px;
+            background : #D8F1F8;
+            border: 1px soild silver;
+            }
+            .mail h2 {
+            margin-left: 38px;
+            }
+            input {
+            font-size: 20pt;
+            }
+            input:focus, textarea:focus{
+            background-color: lightyellow;
+            }
+            input submit {
+                font-size: 12pt;
+                }
+                .rq {
+                color: #FF0000;
+                font-size: 10pt;
+                }
     }
     ul {
     color: bisque;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
     font-size: 18px;
     font-style: normal;
-    font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
     text-align:inherit;
-    flex-direction: column;
     justify-content:inherit;
 }
   }
@@ -140,3 +165,47 @@ h3 {
         max-width: 500px;
         padding: 1rem;
     }
+    .instagramicon {
+        color: bisque;
+        width: 100%;
+        max-width: 25px;
+    }
+    .youtubeicon {
+        color: bisque;
+        width: 100%;
+        max-width: 25px;
+    }
+    footer {
+        bottom: -25;
+        background-color: #493025;
+        width: 100%;
+        max-height: 2.5rem;
+        max-width:inherit;
+    }
+    ul {list-style-type: none;
+        font-size: 16pt;
+        }
+        .mail {
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 400px;
+        background : #D8F1F8;
+        border: 1px soild silver;
+        }
+        .mail h2 {
+        margin-left: 38px;
+        }
+        input {
+        font-size: 20pt;
+        }
+        input:focus, textarea:focus{
+        background-color: lightyellow;
+        }
+        input submit {
+            font-size: 12pt;
+            }
+            .rq {
+            color: #FF0000;
+            font-size: 10pt;
+            }
