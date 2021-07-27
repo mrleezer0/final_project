@@ -2,7 +2,7 @@
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 738px) {
 
 	.main-header,
 	.main-nav,
@@ -20,23 +20,17 @@
 		flex: 1;
   flex-direction: column;
 	}
-	@media (min-width: 825px) {
+	@media (min-width: 1066px) {
 
-		.main-header,
-		.main-nav,
-		.row,
-	  .col {
-			display: flex;
-		}
-	
 		.main-header {
-			flex-direction: crow;
-			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
 		}
-	
-		.col {
-			flex: 1;
-	  flex-direction: column;
+		.logo {
+			width: 250px%;
+			max-width: 75%;
+			padding: 1rem;
+		}
 		}
 
 @media (min-width: 1025px) {
