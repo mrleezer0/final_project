@@ -92,9 +92,15 @@ img {
 }
 .col {
 	padding: 1em;
-	background: #493025a9;
+	background: #493025e0;
 	border-radius: 1em;
 	margin: 0 .5em .8em;
+}
+.button {
+	margin: 1em;
+	padding: .5em;
+	background: #493025;
+	border-radius: 1em;
 }
 .main-footer {
 	background: #493025;
