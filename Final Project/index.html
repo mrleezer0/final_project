@@ -54,8 +54,8 @@
 			<h1>Check Out Today's Tutorial!</h1>
                 <p><a href="https://youtu.be/kFdtIX78qn8">
                 <img class="tutorial" src="https://videohive.img.customer.envatousercontent.com/files/6f35cbc7-9cf4-432b-b561-cbb3ef52658b/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=7ec779e9a8a31ee460bbf3589f5136ca">
-				&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<a class="button" href="#">Learn More</a>
-		</div>	
+		</div>
+		
 	</div>
 	
 	<footer class="main-footer">
@@ -63,13 +63,40 @@
 		<a href="https://www.instagram.com/airguitarworldchampionships/?hl=en"><img class="instagramicon" src="/Users/mattleezer/Documents/projects/Final Project/img/iconmonstr-instagram-10-240.png"></a>
 		<a href="https://www.youtube.com/user/worldairguitar"><img class="youtubeicon" src="/Users/mattleezer/Documents/projects/Final Project/img/iconmonstr-youtube-5-240.png"></a>
 		<div class="banner">
-			<form action="#" method="post" onsubmit="return ValidationEvent()">
-				<h2>Sign Up for Our Newsletter</h2>
-				<label>Name :</label>
-				<input id="name" name="name" placeholder="Name" type="text">
-				<label>Email :</label>
-				<input id="email" name="email" placeholder="Valid Email" type="text">
-				<input type="submit" value="Submit">
+			<button onclick="document.getElementById('id01').style.display='block'">Login to Your Account</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>	
+
+				</div>
 			</form>
 	</footer>
 	

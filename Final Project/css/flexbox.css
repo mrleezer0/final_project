@@ -15,6 +15,10 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	.main-footer {
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.col {
 		flex: 1;
@@ -25,6 +29,11 @@
 		.main-header {
 			flex-direction: row;
 			justify-content: space-between;
+		}
+		.main-footer {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
 		}
 		.logo {
 			width: 250px%;
@@ -43,6 +52,11 @@
 		width: 100%;
 		max-width: 500px;
 		padding: 1rem;
+	}
+	.main-footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 }

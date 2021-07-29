@@ -61,6 +61,13 @@ main {
     justify-content: space-around;
     flex-grow: 1;
 }
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
 
 .column {
     width: 95%;
