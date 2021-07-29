@@ -118,9 +118,9 @@ img {
 /* ---- Page Elements ---- */
 
 .logo {
-    width: 100%;
-    max-width: 500px;
-    padding: 1rem;
+	width: 100%;
+	max-width: 500px;
+	padding: 1rem;
 }
 .headline {
 	margin-bottom: 0;
@@ -161,17 +161,4 @@ img {
 	color: bisque;
 	cursor: pointer;
   }
-    .animate {
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-	from {-webkit-transform: scale(0)}
-	to {-webkit-transform: scale(1)}
-  }
-  
-  @keyframes animatezoom {
-	from {transform: scale(0)}
-	to {transform: scale(1)}
-  } 
+    
